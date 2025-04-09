@@ -1,3 +1,60 @@
+#realTimeClock {
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.dark-theme #realTimeClock {
+    color: #fff;
+}
+
+/* Light/Dark Theme */
+.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  /* FAQ styles */
+  .answer {
+    display: none;
+  }
+  .answer.visible {
+    display: block;
+  }
+  
+  /* Back to Top Button Enhancements */
+#backToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #f8b400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.3s ease;
+}
+
+#backToTopBtn.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#backToTopBtn:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+}
+  
+  /* Optional: add transitions for smoothness */
+  body, .faq-item, #backToTopBtn {
+    transition: all 0.3s ease;
+  }
+  
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
@@ -145,4 +202,28 @@ button:hover {
     .intro, .sidebar {
         width: 100%;
     }
+}
+/* Image Slider */
+.image-slider {
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.slider-container {
+    position: relative;
+    height: 400px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
 }

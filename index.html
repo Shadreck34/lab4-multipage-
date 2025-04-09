@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Lab 3</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
@@ -16,7 +16,10 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div id="realTimeClock"></div>
     </header>
+   <!-- Theme Toggle -->
+  <button id="themeToggle">Switch Theme</button>
 
     <section class="hero">
         <h1>Welcome to Our Website</h1>
@@ -33,10 +36,32 @@
             <p>Stay updated with our latest offers and updates.</p>
         </div>
     </section>
+    <!-- FAQ Section -->
+  <section>
+    <h2>FAQs</h2>
+    <div class="faq-item">
+      <h3 class="question">What is this website about?</h3>
+      <p class="answer">This is a demo project for learning web development.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="question">How do I contact support?</h3>
+      <p class="answer">Use the contact form on the contact page to reach us.</p>
+    </div>
+  </section>
+
+  <!-- API Users -->
+  <section>
+    <h2>Team Members</h2>
+    <ul id="userList"></ul>
+    <button id="loadUsersBtn">Load Users</button>
+  </section>
+  <!-- Bonus: Back to Top -->
+  <button id="backToTopBtn">⬆ Back to Top</button>
 
     <footer>
         <p>&copy; 2025 All Rights Reserved.</p>
     </footer>
+<script src="scripts.js" defer></script>
 
 </body>
 </html>
